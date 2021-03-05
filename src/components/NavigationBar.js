@@ -12,7 +12,7 @@ const NavigationBar = () => {
       <ul>
         {LINKS.map(element => {
           return (
-            <li>
+            <li key={element.text}>
               <Link to={element.to}>{element.text}</Link>
             </li>
           );
